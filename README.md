@@ -1,7 +1,7 @@
 # danielparkspace
 
 static, personal <br />
-http://danielpark.space
+https://danielpark.space
 
 ## things to add:
 
