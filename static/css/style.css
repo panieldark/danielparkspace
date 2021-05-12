@@ -110,7 +110,12 @@ h6 {
 
 
 
+
+
+
+
 /* Profile Picture */
+
 .card-col {
 	padding: 0 !important;
 }
@@ -176,6 +181,65 @@ img {
 }
 
 h4 {
-	line-height: 22px;
-	font-size: 18px;
+	line-height: 22px !important;
+	font-size: 18px !important;
+}
+
+h5 {
+	letter-spacing: 1.5px !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Open Sans ]*/
+
+
+.os12 {
+	font-family: "Open Sans";
+	font-size: 12px;
+	/* line-height: 1.466667; */
+	/* text-transform: uppercase; */
+}
+
+.os13 {
+	font-family: "Open Sans";
+	font-size: 13px;
+	/* line-height: 1.466667; */
+	/* text-transform: uppercase; */
+}
+
+.os14 {
+	font-family: "Open Sans";
+	font-size: 14px;
+	/* line-height: 1.466667; */
+	/* text-transform: uppercase; */
+}
+
+
+.mr12 {
+	font-family: "Manrope";
+	font-size: 12px;
+	letter-spacing: .8px;
+}
+
+.mr13 {
+	font-family: "Manrope";
+	font-size: 13px;
+	letter-spacing: .8px;
+}
+
+.mr135 {
+	font-family: "Manrope";
+	font-size: 13.5px;
+	letter-spacing: .8px;
+}
+
+.mr14 {
+	font-family: "Manrope";
+	font-size: 14px;
+	letter-spacing: .8px;
+}
+
+.list-group-item {
+	border: none !important
 }
