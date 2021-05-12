@@ -1,3 +1,3 @@
 # danielparkspace
-static, personal
+static, personal <br />
 http://danielpark.space
