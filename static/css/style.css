@@ -240,6 +240,39 @@ h5 {
 	letter-spacing: .8px;
 }
 
+.mr14b {
+	font-family: "Manrope";
+	font-size: 14px;
+	letter-spacing: .8px;
+	color: #181818;
+}
+
+.mr145 {
+	font-family: "Manrope";
+	font-size: 14.5px;
+	letter-spacing: .8px;
+}
+
+.mr145b {
+	font-family: "Manrope";
+	font-size: 14.5px;
+	letter-spacing: .8px;
+	color: #181818;
+}
+
+.mr15 {
+	font-family: "Manrope";
+	font-size: 15px;
+	letter-spacing: .8px;
+}
+
+.mr15b {
+	font-family: "Manrope";
+	font-size: 15px;
+	letter-spacing: .8px;
+	color: #181818;
+}
+
 .list-group-item {
 	border: none !important
 }
