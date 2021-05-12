@@ -1,7 +1,7 @@
 /* Fonts */
 
 
-
+/* Open Sans */
 @font-face {
 	font-family: "Open Sans-Bold";
 	src: url('../fonts/OpenSans/OpenSans-Bold.ttf');
@@ -59,9 +59,51 @@
 }
 
 
+/* Manrope */
+
+@font-face {
+	font-family: "Manrope";
+	src: url('../fonts/Manrope/Manrope-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Manrope-Bold";
+	src: url('../fonts/Manrope/Manrope-Bold.ttf');
+}
+
+@font-face {
+	font-family: "Manrope-ExtraBold";
+	src: url('../fonts/Manrope/Manrope-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: "Manrope-ExtraLight";
+	src: url('../fonts/Manrope/Manrope-ExtraLight.ttf');
+}
+
+@font-face {
+	font-family: "Manrope-Medium";
+	src: url('../fonts/Manrope/Manrope-Medium.ttf');
+}
+
+@font-face {
+	font-family: "Manrope-SemiBold";
+	src: url('../fonts/Manrope/Manrope-SemiBold.ttf');
+}
+
+
 
 p,
 div {
+	font-family: "Manrope", "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Open Sans", sans-serif;
 }
 
