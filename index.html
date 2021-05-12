@@ -18,15 +18,62 @@
 
 <body class="container">
 
-	<h1>
 
-		A start
-	</h1>
+	<div class="row">
 
-	<div style="font-size: 12px;">
-		Open Sans
+
+		<div class="col">
+
+			<h1>
+
+				A start
+			</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<div style="font-size: 12px;">
+				Open Sans
+			</div>
+		</div>
 	</div>
 
+
+	<div class="row">
+		<div class="col">
+
+
+			<div class="text-center card-box">
+				<div class="member-card pt-2 pb-2">
+					<div class="thumb-lg member-thumb mx-auto">
+						<a href="{% url 'accs:profile_home' slug=profile.slug %}">
+							<img src="https://uva-soccerlogger.s3.amazonaws.com/meeseek.jpeg"
+								class="rounded-circle img-thumbnail" alt="profile-image">
+						</a>
+					</div>
+					<div class="pt-2">
+
+						<h4>
+							Daniel Park
+						</h4>
+						<p class="text-muted">/u/danielpark
+							<span class="text-pink">
+								| he/him
+							</span>
+							<!-- <span> | <a href="#" class="text-pink">websitename.com</a></span></p> -->
+					</div>
+					<ul class="social-links list-inline">
+						<li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip"
+								class="tooltips" href="https://www.linkedin.com/in/park-daniel-c/"
+								data-original-title="LI"><i class="fa fa-linkedin"></i></a></li>
+
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
