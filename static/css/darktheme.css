@@ -58,23 +58,17 @@ h6,
 	}
 }
 
+@keyframes white-text {
+
+	to {
+		color: white;
+	}
+}
+
 @keyframes peach-text {
 
 	to {
-		color: rgb(236, 222, 204) !important;
-	}
-}
-
-@keyframes border {
-	to {
 		color: rgb(236, 222, 204);
-		border: 1px solid rgb(236, 222, 204);
-	}
-}
-
-@keyframes cream-bg {
-	to {
-		background-color: rgb(236, 222, 204);
 	}
 }
 
@@ -86,8 +80,12 @@ h6,
 
 
 
-.dark-mode>.mr145b,
-.dark-mode>.mr14 {
+.white {
+	animation: white-text 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.peach {
 	animation: peach-text 1.5s linear;
 	animation-fill-mode: forwards;
 }
