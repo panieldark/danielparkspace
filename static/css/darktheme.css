@@ -5,7 +5,16 @@ body {
 	font-size: 25px;
 }
 
-.dark-mode {
-	background-color: black;
-	color: white;
+.dark-mode,
+.dark-mode.list-group-item {
+	background-color: #212529 !important;
+	color: white !important;
+}
+
+
+.list-group-item-modified {
+	position: relative;
+	display: block;
+	padding: 0.75rem 1.25rem;
+	border: none !important;
 }
