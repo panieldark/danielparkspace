@@ -5,16 +5,89 @@ body {
 	font-size: 25px;
 }
 
+/* 
 .dark-mode,
 .dark-mode.list-group-item {
 	background-color: #212529 !important;
 	color: white !important;
-}
+} */
 
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mr145b {
+	color: white !important;
+} */
 
+/* rgb(236, 222, 204) */
 .list-group-item-modified {
 	position: relative;
 	display: block;
 	padding: 0.75rem 1.25rem;
 	border: none !important;
+}
+
+
+
+
+
+
+
+
+@keyframes light-to-dark {
+	from {
+		background-color: rgb(255, 255, 255)
+	}
+
+	to {
+		background-color: rgb(39, 42, 44);
+		color: white !important;
+	}
+}
+
+@keyframes dark-to-light {
+	from {
+		color: rgb(0, 0, 0)
+	}
+
+	to {
+		color: rgb(255, 255, 255);
+	}
+}
+
+@keyframes peach-text {
+
+	to {
+		color: rgb(236, 222, 204) !important;
+	}
+}
+
+@keyframes border {
+	to {
+		color: rgb(236, 222, 204);
+		border: 1px solid rgb(236, 222, 204);
+	}
+}
+
+@keyframes cream-bg {
+	to {
+		background-color: rgb(236, 222, 204);
+	}
+}
+
+
+.dark-mode {
+	animation: light-to-dark 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+
+
+.dark-mode>.mr145b,
+.dark-mode>.mr14 {
+	animation: peach-text 1.5s linear;
+	animation-fill-mode: forwards;
 }
