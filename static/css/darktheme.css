@@ -5,24 +5,6 @@ body {
 	font-size: 25px;
 }
 
-/* 
-.dark-mode,
-.dark-mode.list-group-item {
-	background-color: #212529 !important;
-	color: white !important;
-} */
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.mr145b {
-	color: white !important;
-} */
-
-/* rgb(236, 222, 204) */
 .list-group-item-modified {
 	position: relative;
 	display: block;
@@ -33,9 +15,7 @@ h6,
 
 
 
-
-
-
+/* White to Dark Transitions */
 
 @keyframes light-to-dark {
 	from {
@@ -44,29 +24,25 @@ h6,
 
 	to {
 		background-color: rgb(39, 42, 44);
-		color: white !important;
+		color: white;
 	}
 }
 
-@keyframes dark-to-light {
-	from {
-		color: rgb(0, 0, 0)
-	}
 
+@keyframes white-tts {
 	to {
-		color: rgb(255, 255, 255);
+		border: 2px solid white;
+		color: white;
 	}
 }
 
 @keyframes white-text {
-
 	to {
 		color: white;
 	}
 }
 
 @keyframes peach-text {
-
 	to {
 		color: rgb(236, 222, 204);
 	}
@@ -85,7 +61,79 @@ h6,
 	animation-fill-mode: forwards;
 }
 
+.white-tooltips {
+	animation: white-tts 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
 .peach {
 	animation: peach-text 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+
+
+/* Dark to White transitions */
+
+@keyframes dark-to-light {
+	from {
+		background-color: rgb(39, 42, 44);
+	}
+
+	to {
+		background-color: rgb(255, 255, 255);
+	}
+}
+
+@keyframes gray-tts {
+	to {
+		border: rgba(121, 121, 121, .8);
+		color: rgba(121, 121, 121, .8);
+	}
+}
+
+@keyframes gray-text {
+	to {
+		color: #55595c;
+	}
+}
+
+@keyframes non-peach-text {
+	from {
+		color: rgb(236, 222, 204);
+	}
+
+	to {
+		color: #181818;
+	}
+}
+
+
+.dark-mode {
+	animation: light-to-dark 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+
+
+.light-mode.init {
+	animation: dark-to-light 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+
+
+.gray {
+	animation: gray-text 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.gray-tooltips {
+	animation: gray-tts 1.5s linear;
+	animation-fill-mode: forwards;
+}
+
+.non-peach.peach-init {
+	animation: non-peach-text 1.5s linear;
 	animation-fill-mode: forwards;
 }

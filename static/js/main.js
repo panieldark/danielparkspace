@@ -1,14 +1,13 @@
 // Dark Theme button toggling
 function toggleDarkTheme() {
-	var element = document.body;
+	$("body").addClass("init");
+	$("body").toggleClass(["dark-mode", "light-mode"]);
 
-	element.classList.toggle("dark-mode");
+	// toggle peach text
+	$(".mr14, .mr145b, h1, h2, h3, h4, h5").addClass(["peach-init"]);
+	$(".mr14, .mr145b, h1, h2, h3, h4, h5").toggleClass(["peach", "non-peach"]);
 
-	$(".toggle").toggleClass(["list-group-item", "list-group-item-modified"]);
-
-	// Normal to dark: peach text
-	$(".mr14, .mr145b, h1, h2, h3, h4, h5").toggleClass(["peach"]);
-
-	// Normal to dark: white text
-	$(".summary-text").toggleClass(["white"]);
+	// toggle white text
+	$(".summary-text").toggleClass(["white", "gray"]);
+	$(".tooltips").toggleClass(["white-tooltips", "gray-tooltips"]);
 }
