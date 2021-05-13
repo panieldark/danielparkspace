@@ -9,5 +9,6 @@ function toggleDarkTheme() {
 
 	// toggle white text
 	$(".summary-text").toggleClass(["white", "gray"]);
+	$(".tooltips").addClass(["tt-init"]);
 	$(".tooltips").toggleClass(["white-tooltips", "gray-tooltips"]);
 }
