@@ -5,9 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Daniel Park</title>
+
+
+	<!-- Favicon -->
 	<link rel="shortcut icon" href="./static/images/favicon.ico" type="image/x-icon">
 	<!-- <link rel="shortcut icon" href="./static/images/github_spring2021_transparent.png" type="image/x-icon"> -->
 	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/darktheme.css">
 
 
 	<!-- Boostrap CSS / Bootswatch LUX  -->
@@ -20,12 +24,19 @@
 	<script src="https://kit.fontawesome.com/2654bfb615.js" crossorigin="anonymous"></script>
 
 	<!-- bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+	<script src="./static/js/main.js"></script>
 </head>
 
-<body class="container">
+<body class="container light-mode pb-5 mb-5">
 
 
 
@@ -40,14 +51,14 @@
 			<div class="text-center card-box">
 				<div class="member-card pt-2 pb-2">
 					<div class="thumb-lg member-thumb mx-auto">
-						<a href="https://www.linkedin.com/in/itsdanielpark/">
-							<img src="https://avatars.githubusercontent.com/u/21699995"
-								class="rounded-circle img-thumbnail" alt="profile-image">
+						<a target="_blank" href="https://www.linkedin.com/in/itsdanielpark/">
+							<img src="./static/images/github_spring2021_transparent.png"
+								class="rounded-circle img-thumbnail-custom" alt="profile-image">
 						</a>
 					</div>
 					<div class="pt-2">
 
-						<h4>
+						<h4 class="non-peach">
 							Daniel Park
 						</h4>
 						<p class="text-muted" style="margin-bottom: 5px">/u/danielpark
@@ -57,23 +68,25 @@
 							<!-- <span> | <a href="#" class="text-pink">websitename.com</a></span></p> -->
 					</div>
 
-					<div class="mr14">
+					<div class="mr14 non-peach">
 						Likes to make websites. <br>
 						Mostly interested in Cloud and IoT.
 					</div>
 
 					<ul class="social-links list-inline pt-3">
 						<li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip"
-								class="tooltips" target="_blank" href="https://www.linkedin.com/in/itsdanielpark/"
-								data-original-title="LI"><i class="fa fa-linkedin"></i></a></li>
+								class="tooltips gray-tooltips" target="_blank"
+								href="https://www.linkedin.com/in/itsdanielpark/" data-original-title="LI"><i
+									class="fa fa-linkedin"></i></a></li>
 
 						<li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip"
-								class="tooltips" target="_blank" href="https://github.com/panieldark/"
+								class="tooltips gray-tooltips" target="_blank" href="https://github.com/panieldark/"
 								data-original-title="LI"><i class="fa fa-github"></i></a></li>
 
 						<li class="list-inline-item"><a title="" data-placement="top" data-toggle="tooltip"
-								class="tooltips" target="_blank" href="https://open.spotify.com/user/1223523966"
-								data-original-title="LI"><i class="fa fa-spotify"></i></a></li>
+								class="tooltips gray-tooltips" target="_blank"
+								href="https://open.spotify.com/user/1223523966" data-original-title="LI"><i
+									class="fa fa-spotify"></i></a></li>
 
 					</ul>
 
@@ -84,13 +97,27 @@
 	</div>
 
 
+	<!-- <button onclick="toggleDarkTheme()">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+	</button>
+	<label onclick="toggleDarkTheme()" class="switch">
+		<input type="checkbox">
+		<button class="slider round"></button>
+	</label> -->
+
+	<button onclick="toggleDarkTheme()">Toggle dark mode</button>
+
+
 	<!-- Resume start -->
 	<div class="row justify-content-center">
 		<div class="col col-md-8">
 
 			<ul class="list-group list-group-flush">
-				<li class="list-group-item">
-					<h5>
+				<li class="list-group-item-modified">
+					<h5 class="non-peach">
 						Education
 					</h5>
 
@@ -99,15 +126,16 @@
 							2019 - Now
 						</div>
 						<div class="col-9">
-							<div class="mr145b">
-								B.A., Computer Science <span style="font-size: 16px;">|</span> University of Virginia
+							<div class="mr145b non-peach">
+								B.A., Computer Science <span style="font-size: 16px;">|</span> University of
+								Virginia
 							</div>
 
 							<div class="text-muted mr135">
 								Charlottesville, Virginia
 							</div>
 
-							<div class="pt-2">
+							<div class="pt-2 summary-text gray">
 								GPA: 4.0
 
 								<span style="color: red">
@@ -123,7 +151,7 @@
 							2017 - 2019
 						</div>
 						<div class="col-9">
-							<div class="mr145b">
+							<div class="mr145b non-peach">
 								B.S., Computer Science <span style="font-size: 16px;">|</span> United States
 								Military Academy
 							</div>
@@ -132,7 +160,7 @@
 								West Point, New York
 							</div>
 
-							<div class="pt-2">
+							<div class="pt-2 summary-text gray">
 								GPA: 4.0
 								<span style="color: red">
 									*list accomplishments*
@@ -142,8 +170,8 @@
 
 					</div>
 				</li>
-				<li class="list-group-item">
-					<h5>
+				<li class="list-group-item-modified">
+					<h5 class="non-peach">
 						Experience
 					</h5>
 
@@ -151,7 +179,7 @@
 						<div class="col-3 text-muted">
 							Summer 2020
 						</div>
-						<div class="col-9 mr145b">
+						<div class="col-9 mr145b non-peach">
 							Software Engineer Intern <span style="font-size: 16px;">|</span> Capital One
 
 							<div class="text-muted mr135">
@@ -165,7 +193,7 @@
 						<div class="col-3 text-muted">
 							2020 - Now
 						</div>
-						<div class="col-9 mr145b">
+						<div class="col-9 mr145b non-peach">
 							Undergraduate Teaching Assistant <span style="font-size: 16px;">|</span> University of
 							Virginia
 
@@ -180,8 +208,9 @@
 						<div class="col-3 text-muted">
 							Summer 2019
 						</div>
-						<div class="col-9 mr145b">
-							Machine Learning Research Assistant <span style="font-size: 16px;">|</span> University of
+						<div class="col-9 mr145b non-peach">
+							Machine Learning Research Assistant <span style="font-size: 16px;">|</span> University
+							of
 							Virginia
 
 							<div class="text-muted mr135">
