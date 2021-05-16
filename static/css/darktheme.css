@@ -3,6 +3,7 @@ body {
 	background-color: white;
 	color: black;
 	font-size: 25px;
+	--transition-delay: 1.25s;
 }
 
 .list-group-item-modified {
@@ -110,31 +111,31 @@ body {
 
 
 .dark-mode {
-	animation: light-to-dark 1.5s linear;
+	animation: light-to-dark var(--transition-delay) linear;
 	animation-fill-mode: forwards;
 }
 
 
 
 .light-mode.init {
-	animation: dark-to-light 1.5s linear;
+	animation: dark-to-light var(--transition-delay) linear;
 	animation-fill-mode: forwards;
 }
 
 
 
 .gray {
-	animation: gray-text 1.5s linear;
+	animation: gray-text var(--transition-delay) linear;
 	animation-fill-mode: forwards;
 }
 
 .gray-tooltips.tt-init {
-	animation: gray-tts 1.5s linear;
+	animation: gray-tts var(--transition-delay) linear;
 	animation-fill-mode: forwards;
 }
 
 .non-peach.peach-init {
-	animation: non-peach-text 1.5s linear;
+	animation: non-peach-text var(--transition-delay) linear;
 	animation-fill-mode: forwards;
 }
 
@@ -148,6 +149,8 @@ body {
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	margin: 0 5px;
+
 }
 
 .switch input {
@@ -164,8 +167,8 @@ body {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
+	-webkit-transition: .5s;
+	transition: .5s;
 }
 
 .slider:before {
@@ -176,16 +179,21 @@ body {
 	left: 4px;
 	bottom: 4px;
 	background-color: white;
-	-webkit-transition: .4s;
-	transition: .4s;
+	-webkit-transition: .5s;
+	transition: .5s;
 }
 
 input:checked+.slider {
-	background-color: #2196F3;
+	background-color: rgba(232, 109, 96, 255);
+	background-color: #FBAB7E;
+	background-image: linear-gradient(180deg, rgba(231, 83, 96, 255) 0%, rgba(236, 126, 95, 255) 100%);
+	transition: background-image var(--transition-delay);
+
 }
 
 input:focus+.slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px rgba(232, 109, 96, 255);
+
 }
 
 input:checked+.slider:before {
@@ -201,4 +209,38 @@ input:checked+.slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
+}
+
+
+
+.sun-moon-toggler {
+	justify-content: center;
+	align-items: center;
+}
+
+.sun {
+	opacity: 1;
+	color: rgb(241, 153, 37);
+	transition: opacity var(--transition-delay);
+	animation-name: slideInLeft;
+}
+
+.moon {
+	opacity: 0;
+	color: rgb(209, 208, 208);
+	transition: opacity var(--transition-delay);
+	animation-name: slideOutRight;
+
+}
+
+.dark-mode .sun {
+	opacity: 0;
+	transition: opacity var(--transition-delay);
+	animation-name: slideOutLeft;
+}
+
+.dark-mode .moon {
+	opacity: 1;
+	transition: opacity var(--transition-delay);
+	animation-name: slideInRight;
 }

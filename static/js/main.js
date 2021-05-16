@@ -1,5 +1,6 @@
 // Dark Theme button toggling
 function toggleDarkTheme() {
+	$(".switch").css("pointer-events", "none");
 	$("body").addClass("init");
 	$("body").toggleClass(["dark-mode", "light-mode"]);
 
@@ -11,4 +12,11 @@ function toggleDarkTheme() {
 	$(".summary-text").toggleClass(["white", "gray"]);
 	$(".tooltips").addClass(["tt-init"]);
 	$(".tooltips").toggleClass(["white-tooltips", "gray-tooltips"]);
+
+	// Add animation to sun
+	$(".sun").addClass("animate__animated");
+
+	setTimeout(function () {
+		$(".switch").css("pointer-events", "auto");
+	}, 1250);
 }
