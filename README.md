@@ -9,6 +9,5 @@ https://danielpark.space
 - contact info/ways to contact
   - recaptcha
 - resume pdf view (traditional)
-- light mode / dark mode switch (clean)
 - projects tab
 - spotify api?
