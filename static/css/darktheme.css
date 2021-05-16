@@ -167,8 +167,8 @@ body {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: 1s;
-	transition: 1s;
+	-webkit-transition: .5s;
+	transition: .5s;
 }
 
 .slider:before {
@@ -179,8 +179,8 @@ body {
 	left: 4px;
 	bottom: 4px;
 	background-color: white;
-	-webkit-transition: 1s;
-	transition: 1s;
+	-webkit-transition: .5s;
+	transition: .5s;
 }
 
 input:checked+.slider {
@@ -222,22 +222,25 @@ input:checked+.slider:before {
 	opacity: 1;
 	color: rgb(241, 153, 37);
 	transition: opacity var(--transition-delay);
-
+	animation-name: slideInLeft;
 }
 
 .moon {
 	opacity: 0;
 	color: rgb(209, 208, 208);
 	transition: opacity var(--transition-delay);
+	animation-name: slideOutRight;
 
 }
 
 .dark-mode .sun {
 	opacity: 0;
 	transition: opacity var(--transition-delay);
+	animation-name: slideOutLeft;
 }
 
 .dark-mode .moon {
 	opacity: 1;
 	transition: opacity var(--transition-delay);
+	animation-name: slideInRight;
 }

@@ -11,4 +11,7 @@ function toggleDarkTheme() {
 	$(".summary-text").toggleClass(["white", "gray"]);
 	$(".tooltips").addClass(["tt-init"]);
 	$(".tooltips").toggleClass(["white-tooltips", "gray-tooltips"]);
+
+	// Add animation to sun
+	$(".sun").addClass("animate__animated");
 }
