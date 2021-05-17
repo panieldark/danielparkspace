@@ -1,5 +1,20 @@
 // Dark Theme button toggling
-function toggleDarkTheme() {
+if (localStorage.getItem("dark") == "on") {
+	toggleDarkTheme(false);
+}
+
+function toggleDarkTheme(toggle) {
+	// param toggle: if user just clicked, or not
+	if (toggle == false) {
+		manuallyToggleSlider();
+	}
+	// Toggle dark theme storage setting
+	else if (localStorage.getItem("dark") == "on") {
+		localStorage.setItem("dark", "off");
+	} else {
+		localStorage.setItem("dark", "on");
+	}
+
 	$(".switch").css("pointer-events", "none");
 	$("body").addClass("init");
 	$("body").toggleClass(["dark-mode", "light-mode"]);
@@ -19,4 +34,9 @@ function toggleDarkTheme() {
 	setTimeout(function () {
 		$(".switch").css("pointer-events", "auto");
 	}, 1250);
+}
+
+function manuallyToggleSlider() {
+	// if loading dark theme from localstorage
+	$("#slider-checkbox").prop("checked", true);
 }
