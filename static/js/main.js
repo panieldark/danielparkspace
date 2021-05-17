@@ -38,5 +38,7 @@ function toggleDarkTheme(toggle) {
 
 function manuallyToggleSlider() {
 	// if loading dark theme from localstorage
-	$("#slider-checkbox").prop("checked", true);
+	setTimeout(function () {
+		$("#slider-checkbox").prop("checked", true);
+	}, 200);
 }

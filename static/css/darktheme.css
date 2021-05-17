@@ -4,6 +4,7 @@ body {
 	color: black;
 	font-size: 25px;
 	--transition-delay: 1.25s;
+	--slider-transition: .6s;
 }
 
 .list-group-item-modified {
@@ -167,8 +168,8 @@ body {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: .5s;
-	transition: .5s;
+	-webkit-transition: var(--slider-transition);
+	transition: var(--slider-transition);
 }
 
 .slider:before {
@@ -179,8 +180,8 @@ body {
 	left: 4px;
 	bottom: 4px;
 	background-color: white;
-	-webkit-transition: .5s;
-	transition: .5s;
+	-webkit-transition: var(--slider-transition);
+	transition: var(--slider-transition);
 }
 
 input:checked+.slider {
@@ -227,7 +228,7 @@ input:checked+.slider:before {
 
 .moon {
 	opacity: 0;
-	color: rgb(209, 208, 208);
+	color: rgb(236, 222, 204);
 	transition: opacity var(--transition-delay);
 	animation-name: slideOutRight;
 
