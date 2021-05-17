@@ -33,14 +33,14 @@ body {
 
 @keyframes white-tts {
 	to {
-		border: 2px solid white;
-		color: white;
+		border: 2px solid #DCDCDC;
+		color: #DCDCDC
 	}
 }
 
 @keyframes white-text {
 	to {
-		color: white;
+		color: #DCDCDC
 	}
 }
 
