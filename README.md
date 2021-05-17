@@ -11,3 +11,4 @@ https://danielpark.space
 - resume pdf view (traditional)
 - projects tab
 - spotify api?
+- make moon and sun show on same side

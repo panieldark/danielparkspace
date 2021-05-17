@@ -216,6 +216,7 @@ input:checked+.slider:before {
 .sun-moon-toggler {
 	justify-content: center;
 	align-items: center;
+	padding: 0 20px;
 }
 
 .sun {
