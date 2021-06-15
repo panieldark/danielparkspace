@@ -12,3 +12,7 @@ https://danielpark.space
 - resume pdf view (traditional)
 - projects tab
 - spotify api?
+
+
+
+- "I read CTCI cover to cover. Here are the most important points in the book, summarized:"
